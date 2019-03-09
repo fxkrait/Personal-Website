@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!--
+      Project: Personal Website Project
+      Version: V3
+      Author: Gregory Hablutzel
+      Date:   02-19-19
+      Filename: academics.html
+    -->
+  <title>Academics</title>
+  <meta name="keywords" content = "" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="reset.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+</head>
+<body>  
+  <header>
+    <nav class="horizontal">
+      <ul class="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="quotes.html">Quotes</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#" class="submenuTitle" id="styleMenu">Misc ↡</a>
+          <ul class="submenu">
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <h1>Academics:</h1>
+  <p>Click on the name of the class to view any notes or materials I have uploaded pertaining to it.</p>
+  <br>
+
+  <!-- M6LO3 Demonstrate how to create a table (HTML) 
+    Here I create a 5 column table on desktop and 1 column on mobile.
+  -->  
+  <table class="academicSchedule">
+    <caption>Olympic College 2018 - 2019</caption>
+    <colgroup>
+      <!--define column 1 long (1)-->
+      <col id="indexCol" />
+      <!-- define style target for 4 columns after previous one (2-5)-->
+      <col class="dataCols" span="4" />
+    </colgroup>
+    <thead>
+      <tr>
+        <th>Quarter</th>
+        <th colspan="4">Class</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="classIds">
+        <th>Fall</th>
+        <td>Chem&141</td>
+        <td>Math 250</td>
+        <td>CIS 145</td>
+        <td>Chem&151</td>
+      </tr>
+      <tr class="classNames">
+        <th class="fillerCell"></th>
+        <td data-label="Chem&141">General Chemistry I</td>
+        <td data-label="Math 250">Linear Algebra</td>
+        <td data-label="CIS 145">Intro to C Programming</td>
+        <td data-label="Chem&151">General Chemistry Lab</td>
+      </tr>
+      <tr class="classIds">
+        <th>Winter</th>
+        <td>PHYS 255</td>
+        <td>Math 221</td>
+        <td>CIS 151</td>
+        <td class="fillerCell">&nbsp;</td>
+      </tr>
+      <tr class="classNames">
+        <th class="fillerCell"></th>
+        <td data-label="PHYS 255">Engineering Physics II</td>
+        <td data-label="Math 221">Differential Equations I</td>
+        <td data-label="CIS 151">Intro to Web Development I</td>
+        <td class="fillerCell">&nbsp;</td>
+      </tr>
+      <tr class="classIds">
+        <th>Spring</th>
+        <td>PHYS 256</td>
+        <td>Math 264</td>
+        <td>CIS 210</td>
+        <td class="fillerCell">&nbsp;</td>          
+      </tr>
+      <tr class="classNames">
+        <th class="fillerCell"></th>
+        <td data-label="PHYS 256">Engineering Physics III</td>
+        <td data-label="Math 264">Calculus IV</td>
+        <td data-label="CIS 210">SQL</td>
+        <td class="fillerCell">&nbsp;</td>
+      </tr>
+      <tr class="classIds">
+        <th>Summer</th>
+        <td>ENGR 204</td>
+        <td>ENGL 235</td>
+        <td>ENGR ???</td>
+        <td class="fillerCell">&nbsp;</td>
+      </tr>
+      <tr class="classNames">
+        <th class="fillerCell"></th>
+        <td data-label="ENGR 204">Electrical Circuits</td>
+        <td data-label="ENGL 235">Technical Writing</td>
+        <td data-label="ENGR ???">Electrical Circuits Lab</td>
+        <td class="fillerCell">&nbsp;</td>
+      </tr>        
+    </tbody>
+    <!-- M6LO4 Demonstrate how to span multiple rows or multiple columns in a table (HTML, document where you write HTML that causes a multi-row or multi-column span; say which one it is as well: row or column, or both)
+
+Column Span:
+
+The footer spans all five columns in the bottom of the table. This is useful because its more of a note for the entire table, so it makes since to increase its presence and make it noticeable. It also happens at the end of the table, so it does not affect the entry or viewing of the data.
+
+In my mobile table style, I simply display each element as a block, stretching the entire width of the table. So even in this instance, the footer covers the whole width of the table.-->
+    <tfoot>
+      <tr>
+        <td colspan="5">Receive Associates in Engineering from OC</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

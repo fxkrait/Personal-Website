@@ -1,0 +1,434 @@
+@charset "UTF-8";
+/*
+  Project: Personal Website Project
+  Version: V3
+  Author: Gregory Hablutzel
+  Date:   02-19-19
+  Filename: styles.css
+*/
+/* M3LO1 Demonstrate the use of a CSS reset style sheet (CSS, note where you have CSS reset rules) 
+   Here I reset some basic CSS styles, back to sane deaults. 
+   This is because not all browsers have the same defaults.  
+   They are at the top of my first CSS file, so that by precedence, I can overwrite these rules with later rules in my CSS file.
+*/
+
+/*  My Personal "Reset" Styles */
+
+html {
+    font-family: "Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+h1 {
+  font-size: 2em;
+}
+
+h2 {
+  font-size: 1.5em;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+figure {
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body, ul, ol, p, li, figure {
+    margin: 10px 0px 0px 10px;
+}
+
+p, ol, li, h1, h2, h3 {
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+}
+
+ol {
+    margin-left: 10px;
+    padding-left: 30px;
+}
+/*  END OF: My Personal "Reset" Styles */
+
+/* Action Styles */
+/* all unvisited or visited links */
+a:link, a:visited {
+    color: #B7C8C7;
+    text-decoration: none;
+}
+/* Hovered, or clicked link */
+a:hover, a:active {
+    color: #67536C;
+    text-decoration: underline;
+}
+
+/* General Styles */
+
+img {
+    border-radius: 20%;
+}
+
+/* Footer Styles */
+footer {
+	display: block;
+	padding: 2px;
+        border: 3px double rgb(20, 20, 53);
+}
+
+footer::after {
+   clear: both;	
+   content: "";
+   display: table;
+}
+
+/* Main Content Styles */
+
+html {
+    background-image: url(projects/dactyl/dactyl.png);
+    /* keep background fixed */
+    background-attachment: fixed;
+    background-position: left top;
+    background-size: auto;
+     
+}
+
+body {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    min-height: 100%;
+    max-width: 80%;
+    background-color: #374548;
+    color: #B7B7C8;
+    height: 100%;
+    /*
+      M4LO5 Demonstrate the use of text and box shadowing (CSS)
+      I created a dark box-shadow around the main body of my page.
+   */
+    box-shadow: rgb(30, 30, 30) 10px 0px 50px,
+                rgb(30, 30, 30) -10px 0px 50px;
+}
+
+.content {
+    max-height: 600px;
+    overflow: auto;
+}
+
+.content::after {
+   clear: both;	
+   content: "";
+   display: table;
+}
+
+img[usemap="#projectMap"] {
+    transform: perspective(120px) rotateX(40deg);
+    filter: invert(0.3) saturate(1.2);
+}
+
+figure figcaption {
+    background-color: grey;
+    color: white;
+}
+
+#address {
+    color: rgb(150, 100, 80);
+
+}
+
+#code, #cv {
+    position: relative;
+    top: 0px;
+    left: -8px;
+}
+
+.homeLinks {
+    color: grey;
+}
+
+.homeLinks > p::first-letter {
+    color: #C8AB37;
+}
+
+a[href="http://gitlab.com"] {
+    color: #8D5FD3;
+}
+
+#name {
+    text-shadow: black 0px 0px 5px;
+}
+
+#styleMenu{
+    color: brown;
+}
+
+.list li {
+    margin-left: 10px;
+}
+
+#dactyl {
+    width: 30%;
+    height: 30%;
+}
+
+/* Row Group Styles */
+
+table.academicSchedule thead {
+    background:  #53536C;
+    color: white;
+}
+
+table.academicSchedule tfoot {
+    background: #50162D;
+    color: #DEAA87;
+    text-align: center;
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+/* Column Group Styles */
+
+col#indexCol {
+    background: #3E3748;
+    width: 16%;
+}
+
+col.dataCols {
+    background:  #67536C;
+    width: 12%;
+}
+
+.classIds td{
+    color: #8A916F;
+}
+
+.classNames td {
+    color: #ACA793;
+}
+
+/*
+    M6LO7 Demonstrate how to format a table with CSS (CSS, group your table styles together and note the overall impact they have on the HTML)
+
+Desktop Table Style:
+1) I have added a border to my table, which makes the table stand out more.
+2) For my header, I have a distinct color to make it visible and separate from the rest of the table.
+3) I then added a column style for my labels for each quarter – this includes a distinct background, and font-color, again, making this portion of the table visible and distinct from the rest.
+4) I added a distinct color for all of the data in my table, which represents the classes, to make them distinct and visible. I then implemented different font colors for the class name, and class ID, which keeps them distinct from each other, and increases readability.
+5) I also have a distinct red background for my footer, and orange text for the font color, as this is important information I want to be shown at the bottom of the table. I also span this data over the entire column of the table, so it spans the entire width of the table for emphasis and clarity.
+
+Mobile Table Style:
+I’ve left most of the mobile styling to the default, because it is hard to style the mobile layout. There are no longer clear columns and rows of distinct data, as I am now prepending and merging the data into singular rows on one column to get everything to fit on the same line. Because of this, I can no longer style by column or row for the data.
+*/
+
+/* Table Cell Styles */
+
+table.academicSchedule {
+    background: #37483E;
+    border: 8px outset #5D536C;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    width: 80%;
+    margin-left:auto; 
+    margin-right:auto;
+}
+
+table.academicSchedule th, table.academicSchedule td {
+    border: 1px solid gray;
+    padding: 5px;
+    /* alligns tex to top */
+    vertical-align: top;
+}
+/*
+  M5LO3 Use media queries to format a page differently for phones vs. PCs. (CSS, note where these are in your CSS and describe the overall impact they have on the site)
+Nav Layout:
+
+Below are my media-queries for my table and my navigation bar.
+I have separate media queries, because the desktop table tends to have rendering errors at around 600px, so I set my "mobile table" to be at 640px.
+
+For desktop layout(>= 769px), I have the navigation displayed as a row without pulldown menu.
+For a tablet layout(>480px, < 769px), I have the navigation displayed in one column, and without a pulldown menu. This is an implied style, as the pulldown menu is only defined in the mobile layout. As a result, this style is implicitly defined as the edge case between the Desktop and Mobile Layouts.
+
+Pulldown Menu:
+For Mobile Layout (<=480px wide), I have the navigation displayed in one column, with a pulldown menu for the miscellaneous items.
+
+Furthermore, I have designed my table so that it works on the desktop (tablet) and mobile. In the desktop mode, I have a table with a five column layout. However, in the mobile layout, I change the layout to have only one column. This reduces the width so that the table content can fit on the mobile screen’s reduce width.
+*/
+
+/* ===============================
+   Table Styles 
+   Tablet & Desktop (WIDE): >640px 
+   ===============================
+*/
+
+@media only screen and (min-width: 641px) {
+    /* Table Cell Styles */
+
+    table.academicSchedule thead tr {
+        height: 35px;
+    }
+
+    table.academicSchedule tbody tr {
+        height: 40px;
+    }
+
+    table.academicSchedule caption {
+        font-size: 1.5em;
+        font-weight: bold;
+        color: #918A6F;
+    }
+}
+
+/* ===============================
+   Table Styles 
+   Small Screens: < 640px (can't fit table) 
+   ===============================
+*/
+@media only screen and (max-width: 640px) {
+    thead, .fillerCell, .classIds td {
+        display: none;
+    }
+        
+    table, tbody, tr, td, th, tfoot, caption {
+        display: block;
+    }
+    
+    th.classIds {
+        display: block;
+        width: 100%;
+    }
+    
+    tbody td {
+        position: relative;
+        padding-left: 40%;
+        text-align: center;
+        vertical-align: top; 
+    }
+    
+    td::before {
+        content: attr(data-label);
+        position: absolute;
+        top: 5px;
+        left: 0px;
+        text-align: left;
+        padding-left: 5px;
+        width: 40%;                
+    } 
+}
+
+/* General Horizonal Navigation Styles */
+
+nav.horizontal {
+   min-height: 1.33em;
+}
+
+nav.horizontal li {
+   color: #C8AB37;
+   display: block;
+   text-transform: uppercase;
+   line-height: 1.8em;
+}
+
+nav.horizontal a {
+   display: block;
+   font-size: 1em;
+}
+
+nav.horizontal a:visited, nav.horizontal a:link {
+   color:  #C8AB37;
+}
+
+nav.horizontal a:hover, nav.horizontal a:active {
+    background-color: #53676C;
+}
+
+/* Main Menu Styles */
+
+ul.navMenu {
+   display: block;
+}
+
+ul.navMenu > li {
+   text-indent: 15px;
+}
+
+/* Submenu Styles */
+
+ul.submenu {
+    width: 100%;
+    text-align: left;    
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+/* 
+   M5LO4 Use CSS for pull down menus (CSS)
+
+Pulldown Menu:
+For Mobile Layout (<=480px wide), I have the navigation displayed in one column, with a pulldown menu for the miscellaneous items.
+
+*/
+
+/* ============================
+   Moblie Styles: 0px to 480px
+   ============================
+*/
+@media only screen and (max-width: 480px) {
+
+    nav.horizontal a {
+        font-size: 1.5em;
+        line-height: 2.2em;
+    }
+
+    /* Pulldown Menu Styles */
+
+    /* Hide submenu */
+    ul.submenu {
+        display: none;
+    }
+
+    /* Show pulldown menu on hover */
+    a.submenuTitle:hover+ul.submenu, ul.submenu:hover {
+        display: block;
+    }
+}
+
+/* =================================
+   Desktop Styles: 769px and greater
+   =================================
+*/
+@media only screen and (min-width: 769px) {
+
+    ul.navMenu > li {
+        float: left;
+        position: relative;
+        width: 20%;
+    }
+
+    ul.submenu {
+        position: absolute;
+        background: transparent;
+        display: block;
+        position: relative;
+        width: 100%;
+    }
+
+    nav.horizontal::after {
+        clear: both;
+        content: "";
+        display: table;
+    }
+
+    /* Fix Formatting */
+    ul, li{
+        margin-top: 0px;
+        font-size: 0.95em;
+    }
+    
+    nav {
+        margin-left: 20%;
+        margin-right: 20%;
+        width: 60%;
+    }
+}

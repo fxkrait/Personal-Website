@@ -1,0 +1,125 @@
+@charset "utf-8";
+/*
+  Project: Personal Website Project
+  Version: V3
+  Author: Gregory Hablutzel
+  Date: 02-19-19
+  Filename: indexStyle.css
+*/
+
+/* Left-Column Styles: */
+
+.leftColumn {
+    display: block;
+    float: left;
+    padding: 2px;
+    border: 3px double rgb(20, 20, 53);
+    width: 30%;
+    margin: 0 auto;
+    text-align: center;
+   background: linear-gradient(rgba(50, 70, 80, 1), rgba(255, 255, 0, 0));
+}
+
+.leftColumn::after {
+   clear: both;	
+   content: "";
+   display: table;
+}
+
+.leftColumn > img {
+    display: block;
+    width: 50%;
+    margin: 0 auto; /* Centers the logo */
+}
+
+.aboutMe {
+    display: block;
+    float: left;
+    padding: 2px;
+    border: 3px double rgb(20, 20, 53);
+}
+
+.aboutMe {
+    margin: 0 auto;
+    text-align: left;
+}
+
+.aboutMe::after {
+   clear: both;	
+   content: "";
+   display: table;
+}
+
+.homeLinks {
+    text-align: center;
+}
+
+#profilePicture {
+    opacity: 0.80;
+    height: 50%;
+    width: 50%;
+}
+
+/* Right-Column Styles: */
+
+.rightColumn {
+    display: block;
+    float: left;
+    padding: 2px;
+    border: 3px double rgb(20, 20, 53);
+    width: 68%;
+}
+
+.QuoteOfDay {
+    display: block;
+    float: left;
+    padding: 2px;
+    border: 3px double rgb(20, 20, 53);
+}
+
+.QuoteOfDay {
+    margin: 0 auto;
+    text-align: center;
+}
+
+
+.QuoteOfDay::after {
+   clear: both;	
+   content: "";
+   display: table;
+}
+
+.CurrentProject {
+    display: block;
+    float: left;
+    padding: 2px;
+    border: 3px double rgb(20, 20, 53);
+    width: 50%;
+}
+
+.CurrentProject {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.CurrentProject::after {
+   clear: both;	
+   content: "";
+   display: table;
+}
+
+img[alt="dactyl"] {
+    height: 40%;
+    width: 40%;
+}
+
+/* General Styles */
+
+.data::after {
+   clear: both;	
+   content: "";
+   display: table;
+}
+
+
+

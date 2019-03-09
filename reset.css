@@ -1,0 +1,40 @@
+@charset "UTF-8";
+/*
+  Project: Personal Website Project
+  Version: V3
+  Author: Gregory Hablutzel
+  Date:   02-19-19
+  Filename: styles.css
+*/
+/* RESET STYLES 
+*/
+/* Not all browsers display as block, force it */
+nav, figure, header, footer, figcaption, article, aside, main, section {
+    display: block;
+}
+
+/* Reset general styles for most elements */
+body, img, html, ul, ol, p, nav, figure, figcaption, dt, dl, div, h1, h2, h3, header, li, address, article, aside, blockquote, cite, dd, em, footer, h4, h5, h6, main, section, span {
+    background: transparent;
+    font-size: 100%;
+    margin: 0;
+    padding: 0;
+    vertical-align: baseline;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+nav ul {
+    list-style: none;
+    list-style-image: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+body {
+    line-height: 1;
+}
+/* END OF: Reset Styles */

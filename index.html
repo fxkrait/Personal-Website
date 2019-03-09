@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <!--
+      Project: Personal Website Project
+      Version: V3
+      Author: Gregory Hablutzel
+      Date:   02-19-19
+      Filename: index.html
+  -->
+  <title> Gregory Hablutzel </title>
+  <meta name="keywords" content = "" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link href="reset.css" rel="stylesheet" />
+  <link href="styles.css" rel="stylesheet" />
+  <link href="indexStyle.css" rel="stylesheet" />
+  <style>
+    #name {
+        color: #AC9393;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="horizontal">
+      <ul class="navMenu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="quotes.html">Quotes</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="#" class="submenuTitle" id="styleMenu">Misc ↡</a>
+          <ul class="submenu">
+            <li><a href="academics.html">Academics</a></li>
+            <li><a href="people.html">People</a></li>
+            <li><a href="tools.html">Tools</a></li>
+            <li><a href="about.html">About</a></li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <div class="data">
+    <div class="leftColumn">
+      <img src="img/profile.png" alt="profile picture" id="profilePicture"  />
+      <h3 id="name">Gregory Hablutzel</h3>
+      <div class="homeLinks">
+        <p>&#128233; e-mail </p>
+        <p id="code"><a href="http://gitlab.com">&#9708; code </a></p>
+        <p>&#128249; youtube </p>
+        <p id="cv">&#11027; c.v. </p>
+      </div>
+      <p id="address">&#128506; Bremerton, WA </p>
+    </div>
+    <div class="rightColumn">
+      <div class="aboutMe">
+        <p> Hello! I am a student at Olympic College, completing my Associates of Engineering by Summer '19.</p>
+        <p>When completed, my plan is to study Electrical Engineering at Olympic College through their Washington State University program, or to attend some in state school for Computer Science, Applied Math, etc.</p>
+        <p>My long-term goals are to work in the A.I. & Deep/Machine Learning field.</p>
+        <p>I find the idea of creating (or atleast implementing a small subset of) a thinking mind (algorithm) very intriguing..</p>
+        <p>This webpage displays some of the projects I am working on, as well as resources I enjoy, and tools I use. Feel free to explore.</p>
+      </div>
+      <div class="QuoteOfDay">  
+        <h3 style="color: #8A6F91;">Quote of the day:</h3>
+        <p id="quoteOfDay">"Problems worthy of attack prove their worth by fighting back." - Piet Hein </p>
+      </div>
+      <div class="CurrentProject">
+        <h3>Current Project:</h3>
+        <p> Dactyl Manuform Keyboard + 3D Printer</p>
+        <!-- This is a screen shot I took of the 3D model on my computer -->
+        <figure>
+          <img src="projects/dactyl/dactyl.png" alt="dactyl" usemap="#projectMap" />
+          <figcaption>Click on image (center) to view project</figcaption>
+        </figure>
+        <map name="projectMap">
+          <area shape="rect" coords="50,10,200,100" href="projects.html" alt="dactyl-project" />
+        </map>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

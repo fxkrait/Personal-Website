@@ -1,0 +1,39 @@
+@charset "utf-8";
+/*
+  Project: Personal Website Project
+  Version: V3
+  Author: Gregory Hablutzel
+  Date: 02-19-19
+  Filename: quotes.css
+*/
+/* Quotes Page */
+.Categories {
+    padding-left: 10px;
+}
+
+.Author {
+    padding-left: 20px;						      
+}
+
+/* Math & Programming Indentation */
+.mathQuote, .programmingQuote, .aphorismsQuote {
+    padding-left: 30px;
+    text-indent: 10px;
+    text-align: left;
+}
+
+/* Philosophy Indentation */
+.philosophyWork {
+    text-indent: 30px;
+}
+
+.philosophyQuote {
+    padding-left: 40px;
+    text-indent: 10px;
+    text-align: left;
+}
+
+#fixedHeader {
+    position: fixed;
+    text-indent: -140px;
+}
