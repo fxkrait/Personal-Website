@@ -432,3 +432,15 @@ For Mobile Layout (<=480px wide), I have the navigation displayed in one column,
         width: 60%;
     }
 }
+
+
+
+
+#akira {
+    display: block;
+    margin: auto;
+    size: 50%;
+    border-radius: 50%;
+    width: 10%;
+    
+}
