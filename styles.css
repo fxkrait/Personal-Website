@@ -439,8 +439,23 @@ For Mobile Layout (<=480px wide), I have the navigation displayed in one column,
 #akira {
     display: block;
     margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
     size: 50%;
     border-radius: 50%;
     width: 10%;
-    
+    animation: rotate 100s linear infinite;
+}
+
+
+@keyframes rotate {
+    0% {transform: rotate(0deg);}
+    100% {transform: rotate(360deg);}
+}
+
+
+iframe {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
 }
