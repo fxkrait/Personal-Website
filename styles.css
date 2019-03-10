@@ -448,7 +448,7 @@ legend {
 
 /* Label Styles */
 
-label {
+label, .labelExtension {
     background-color:  #53536C;
     padding: 5px; 
 }
@@ -472,6 +472,40 @@ label {
 fieldset div, label[for="projectDescription"] {
     margin-top: 10px;
     margin-bottom: 7px;
+}
+
+.chooseHeading {
+    display: block;
+    float: left;
+    width: 180px;
+}
+
+.labelExtension {
+    width: 180px;
+    display: inline-block;
+}
+
+.labelExtension p {
+    margin-top: 0px;
+    display: inline-block;
+}
+
+.choose {
+    display: inline-block;
+}
+
+
+.greenText {
+    color: #93AC93;
+}
+
+.redText {
+    color: #D35F5F;
+}
+
+label p {
+    display: inline;
+               
 }
 
 /* Text Area Styles */

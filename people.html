@@ -34,10 +34,9 @@
       </ul>
     </nav>
   </header>
-
   <section>
+      <h2>Want to Collaborate?</h2>
     <div id="collabIntro">
-      <h1>Want to Collaborate?</h1>
       <p>Enter details below about what you want to work on. I'll get in touch as soon as possible, and let you know if I'm interested.</p>
       <p>Check "academics.html" for my current academic schedule and academic focus</p>
 
@@ -83,17 +82,17 @@
         <div class="inputRow">
           <label>Are you a student?</label>
           <fieldset class="radioButtons binary">
-            <label for="sYes">Yes</label>
-            <input name="student" id="sYes" value="yes" type="radio" />
-            <label for="sNo">No</label>
-            <input name="student" id="sNo" value="no" type="radio" />
+            <label for="studYes">Yes</label>
+            <input name="student" id="studYes" value="yes" type="radio" />
+            <label for="studNo">No</label>
+            <input name="student" id="studNo" value="no" type="radio" />
           </fieldset>
         </div>
       </fieldset>
       
       <fieldset id="projectInformation">
-        <legend>Project Information</legend> 
-
+        <legend>Project Information</legend>
+        
         <!-- M7LO8 Demonstrate the use of a selection list in a form
              I added a selection list to identify what category the project falls under (under the given options they can choose from). 
           -->
@@ -110,17 +109,29 @@
         <!-- M7LO9 Demonstrate the use of a text area in a form.
              I added a text area form, to receive a written description of the project from them. 
         -->
-        <label class="reqField" for="projectDescription">Project Description</label>
+        <label class="reqField">Project Description</label>
         <textarea name="projectDesc" id="descriptionText" required></textarea>
 
-        <div class="inputRow">
-          <label for="difficultyRange">General Scope of Difficulty:<br />
-             (<font color="#93AC93">0=Easy</font>: <font color="#D35F5">10=Hard</font>)</label>
-          
-          <font color="#93AC93"> 0</font>
-          <input name="difficulty" id="difficultyRange" type="range"
+        <div class="inputRow widthMax">
+          <label class="chooseHeading" for="difficultyRange">General Scope of Difficulty:<br />
+          </label>
+          <p>&#8203;</p>
+          <p>&#8203;</p>
+          <!-- It's "bad style" to have paragraphs inside label - so break them out into a separate divider. I need paragraphs so I can target the color of individual text. I cannot use use inline HTML <font> coloring because that is also "bad style". So this "hack" of sorts is necessary to pass the HTML validator.
+
+            NOTE: The ideal solution is to use inline HTML <font> inside label for the green and red text. Then, I do not need this divider or the paragraphs. It's simpler, but fails HTML validator do to HTML font colors, and not using CSS for it.-->
+          <div class="labelExtension">
+            <p>[</p>
+            <p class="greenText">0=Easy</p>
+            <p>:</p>
+            <p class="redText">10=Hard</p>
+            <p>]</p>
+          </div>
+          <p>&#8203;</p>
+          <p class="choose greenText">0</p>
+          <input class="choose" name="difficulty" id="difficultyRange" type="range"
                  value="5" step="1" min="0" max="10" />
-          <font color="#D35F5F"> 10</font>
+          <p class="choose redText">10</p>
         </div>
       </fieldset>
 
@@ -130,10 +141,10 @@
         <div class="inputRow">
           <label>How do you want to collaborate?</label>
           <fieldset class="radioButtons">
-            <label for="sYes">In-Person</label>
-            <input name="collaborate" id="sYes" value="yes" type="radio" />
-            <label for="sNo">Remotely</label>
-            <input name="collaborate" id="sNo" value="no" type="radio" />
+            <label for="locPhys">In-Person</label>
+            <input name="collaborate" id="locPhys" value="yes" type="radio" />
+            <label for="locRemote">Remotely</label>
+            <input name="collaborate" id="locRemote" value="no" type="radio" />
           </fieldset>
         </div>
         <!-- M7LO6 Demonstrate the use of check boxes in a form 
