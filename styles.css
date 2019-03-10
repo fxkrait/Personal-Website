@@ -6,12 +6,6 @@
   Date:   03-09-19
   Filename: styles.css
 */
-/* M3LO1 Demonstrate the use of a CSS reset style sheet (CSS, note where you have CSS reset rules) 
-   Here I reset some basic CSS styles, back to sane deaults. 
-   This is because not all browsers have the same defaults.  
-   They are at the top of my first CSS file, so that by precedence, I can overwrite these rules with later rules in my CSS file.
-*/
-
 /*  My Personal "Reset" Styles */
 
 html {
@@ -104,10 +98,6 @@ body {
     background-color: #374548;
     color: #B7B7C8;
     height: 100%;
-    /*
-      M4LO5 Demonstrate the use of text and box shadowing (CSS)
-      I created a dark box-shadow around the main body of my page.
-   */
     box-shadow: rgb(30, 30, 30) 10px 0px 50px,
                 rgb(30, 30, 30) -10px 0px 50px;
 }
@@ -207,20 +197,6 @@ col.dataCols {
 .classNames td {
     color: #ACA793;
 }
-
-/*
-    M6LO7 Demonstrate how to format a table with CSS (CSS, group your table styles together and note the overall impact they have on the HTML)
-
-Desktop Table Style:
-1) I have added a border to my table, which makes the table stand out more.
-2) For my header, I have a distinct color to make it visible and separate from the rest of the table.
-3) I then added a column style for my labels for each quarter – this includes a distinct background, and font-color, again, making this portion of the table visible and distinct from the rest.
-4) I added a distinct color for all of the data in my table, which represents the classes, to make them distinct and visible. I then implemented different font colors for the class name, and class ID, which keeps them distinct from each other, and increases readability.
-5) I also have a distinct red background for my footer, and orange text for the font color, as this is important information I want to be shown at the bottom of the table. I also span this data over the entire column of the table, so it spans the entire width of the table for emphasis and clarity.
-
-Mobile Table Style:
-I’ve left most of the mobile styling to the default, because it is hard to style the mobile layout. There are no longer clear columns and rows of distinct data, as I am now prepending and merging the data into singular rows on one column to get everything to fit on the same line. Because of this, I can no longer style by column or row for the data.
-*/
 
 /* Table Cell Styles */
 
@@ -347,13 +323,6 @@ ul.submenu {
     margin-right: 0px;
 }
 
-/* 
-   M5LO4 Use CSS for pull down menus (CSS)
-
-Pulldown Menu:
-For Mobile Layout (<=480px wide), I have the navigation displayed in one column, with a pulldown menu for the miscellaneous items.
-
-*/
 
 /* ============================
    Moblie Styles: 0px to 480px
@@ -419,7 +388,6 @@ For Mobile Layout (<=480px wide), I have the navigation displayed in one column,
 }
 /* M8LO10 Demonstrate a CSS animation or transition (CSS, identify which is being done and its impact on the rendered HTML) 
    The animation is located on the about page.
-   The gif shows the construction/repair of a person, so I think it's appropriate on the about page where I describe the construction of the web site.
 
    Here I define an animation called "rotate" which rotates the object from 0 degrees to 360 degrees. 
    This will be a complete rotation.
@@ -430,7 +398,7 @@ For Mobile Layout (<=480px wide), I have the navigation displayed in one column,
 
 /* gif / Animation Styles */
 
-#akira {
+#giphy {
     display: block;
     margin: auto;
     padding-top: 50px;

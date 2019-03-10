@@ -7,20 +7,6 @@
   Filename: flex2.css
 */
 
-/*
-M5LO5 Demonstrate the use of flexboxes on a web page (CSS document where you use flexboxes; explain their impact on the page's layout; this can be a new page or a redo of an existing page)
-displayed in reverse order.
-
-Look at the ***Tools*** Page for the flexboxes.
-
-I have my flexbox containers displaying all of the elements in reverse row order. Normally, they are display from left to right, and aligned to the right. However, I have displayed them from right to left, and aligned right. One benefit of this layout is that it makes it far easier to read the headers for each category, as there is a lot of whitespace around them. Also the header are aligned left, while the content is aligned right.
-
-Also, I am using "flex-wrap: wrap;", which wraps the elements into a new row if they cannot fit. This is usefull for smaller screen sizes, as the data can now fit without resizing the flex items or having to add scroll bars.
-
-    M5LO7 Demonstrate use of properties of flexbox containers (CSS, document what flexbox container properties you use and their impacts, for one CSS selector using them)
-    For my flexbox container, I used "flex-direction: row-reverse;", which display the flexbox elements as a row, and in reverse order. Normally, they are displayed from left to right, and aligned to the right. However, I have displayed them from right to left, and aligned right. One benefit of this layout is that it makes it far easier to read the headers for each category, as there is a lot of whitespace around them. Also the header are aligned left, while the content is aligned right.
-*/
-
 .flex-container {
     display: flex;
     flex-wrap: wrap;
@@ -46,19 +32,6 @@ h2.project {
     margin-left: 5px;
     margin-right: 5px;
 }
-/*
-   M5LO6 Demonstrate use of properties of flexbox items (CSS, document what flexbox item properties you use and their impacts, for one CSS selector using them)
-Pick ONE, (order, grow/shrink rates)
-
-ORDER:
-
-Look at the ***Tools*** Page for the flexboxes.
-
-I use the flexbox order property, to set the divider with the text "calendar" ID to display first.
-flexbox have a default order of 0, with the lower number getting priority.
-So, I set this element I want prioritized to -1, which is less than 0, so it will be displayed first.
-However, my flex display is in reverse order, displaying from right to left, so this first element to be placed ends up being the first element on the far right.
-*/
 
 #first {
     order: -1;
