@@ -240,21 +240,6 @@ table.academicSchedule th, table.academicSchedule td {
     /* alligns tex to top */
     vertical-align: top;
 }
-/*
-  M5LO3 Use media queries to format a page differently for phones vs. PCs. (CSS, note where these are in your CSS and describe the overall impact they have on the site)
-Nav Layout:
-
-Below are my media-queries for my table and my navigation bar.
-I have separate media queries, because the desktop table tends to have rendering errors at around 600px, so I set my "mobile table" to be at 640px.
-
-For desktop layout(>= 769px), I have the navigation displayed as a row without pulldown menu.
-For a tablet layout(>480px, < 769px), I have the navigation displayed in one column, and without a pulldown menu. This is an implied style, as the pulldown menu is only defined in the mobile layout. As a result, this style is implicitly defined as the edge case between the Desktop and Mobile Layouts.
-
-Pulldown Menu:
-For Mobile Layout (<=480px wide), I have the navigation displayed in one column, with a pulldown menu for the miscellaneous items.
-
-Furthermore, I have designed my table so that it works on the desktop (tablet) and mobile. In the desktop mode, I have a table with a five column layout. However, in the mobile layout, I change the layout to have only one column. This reduces the width so that the table content can fit on the mobile screen’s reduce width.
-*/
 
 /* ===============================
    Table Styles 
@@ -432,6 +417,16 @@ For Mobile Layout (<=480px wide), I have the navigation displayed in one column,
         width: 60%;
     }
 }
+/* M8LO10 Demonstrate a CSS animation or transition (CSS, identify which is being done and its impact on the rendered HTML) 
+   The animation is located on the about page.
+   The gif shows the construction/repair of a person, so I think it's appropriate on the about page where I describe the construction of the web site.
+
+   Here I define an animation called "rotate" which rotates the object from 0 degrees to 360 degrees. 
+   This will be a complete rotation.
+   
+   Then, I apply this "rotate" animation to my gif image, by targeting the id.
+   I define the animation to last 100 seconds with "100s", to continue at the same speed throughout with "linear", and to animate forever with "infinite". 
+*/
 
 /* gif / Animation Styles */
 
@@ -459,10 +454,26 @@ iframe {
     margin-right: 10%;
 }
 
+/* M7LO11 Demonstrate how to format a form with CSS (group your form styles together in your CSS file, and document their overall impact on the form)  
+   Here I implemented the styling for my form.
+   Legend Styles:
+     I change the legend background color to a light purple, the text white, and add padding.
+   Label Styles:
+     Then, I change the background color of the  label for each input row to a darker purple, and also add padding.
+     For my question "Are you a student", I changed the radio buttons background for "yes" to green, and for "no" to red.
+   General Form Styles:
+     I append a red diamond to all text with the field "required".
+     This informs the user what fields are required for submission.
+     I also add margins to some of the dividers, and of the textarea, so nothing overlaps.
+   Text Area Styles:
+     I added a top margin to keep the elements from overlapping.
+     I then manually set the height of the text box, and set its width to 90% of the body.
+     Then, I set the left margin to 1% to indent the text box slightly.
+*/
+
 /* Legend Styles */
 
 legend {
-    /*background-color:  #3E3748;*/
     background-color: #67536C;
     color: white;
     padding: 5px;
@@ -471,9 +482,7 @@ legend {
 /* Label Styles */
 
 label {
-    /*background-color:  #3E3748;*/
     background-color:  #53536C;
-    color: white;
     padding: 5px; 
 }
 
@@ -504,4 +513,5 @@ textarea {
     margin-top: 10px;
     height: 100px;
     width: 90%;
+    margin-left: 1%;
 }

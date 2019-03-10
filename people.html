@@ -40,6 +40,12 @@
       <h1>Want to Collaborate?</h1>
       <p>Enter details below about what you want to work on. I'll get in touch as soon as possible, and let you know if I'm interested.</p>
       <p>Check "academics.html" for my current academic schedule and academic focus</p>
+
+      <!-- M8LO9 Demonstrate the use of the iframe element (HTML) 
+           Here I add the iframe, giving immediate access to the content I previously mentioned in the sentence prior. 
+           This allows them to view it in the same page, and without having to navigate away.
+           In the URL, I also target the link on the id of the headings, so the navigation bar is not displayed, and it is automatically scrolled to and displays the content I was referring to.
+      -->
       <iframe src="academics.html#academics"></iframe> 
       <p>Also check "projects.html" for current projects.</p>
       <iframe src="projects.html#projects"></iframe> 
@@ -52,6 +58,10 @@
     <form id="collaborateForm" action="http://cis2.oc.ctc.edu/oc_apps/Garripoli/checkform.php" method="post">
       <fieldset id="collaboratorName">
         <legend>Collaborator Information</legend>
+
+        <!-- M7LO5 Demonstrate the use of a text box in a form
+              Here I have textbox forms for their name, email, and web page.
+          -->
         <div class="inputRow">
           <label class="reqField" for="name">Name</label>
           <input name="collabName" id="name" type="text" placeholder="first and last name" required/>
@@ -66,7 +76,10 @@
           <label for="web">Personal Website/Git Page</label>
           <input name="collabWeb" id="web" type="url"/>
         </div>
-        
+
+        <!-- M7LO7 Demonstrate the use of radio buttons in a form 
+	     I added radio buttons to ask if they are a student.
+        -->
         <div class="inputRow">
           <label>Are you a student?</label>
           <fieldset class="radioButtons binary">
@@ -80,7 +93,10 @@
       
       <fieldset id="projectInformation">
         <legend>Project Information</legend> 
-        
+
+        <!-- M7LO8 Demonstrate the use of a selection list in a form
+             I added a selection list to identify what category the project falls under (under the given options they can choose from). 
+          -->
         <div class="inputRow">
           <label for="catList">Category</label>
           <select name="categoryType" id="catList">
@@ -91,7 +107,10 @@
         </div>
 
         <br>
-        
+
+        <!-- M7LO9 Demonstrate the use of a text area in a form.
+             I added a text area form, to receive a written description of the project from them. 
+        -->
         <label class="reqField" for="projectDescription">Project Description</label>
         <textarea name="projectDesc" id="descriptionText" required></textarea>
 
@@ -118,11 +137,17 @@
             <input name="collaborate" id="sNo" value="no" type="radio" />
           </fieldset>
         </div>
-        
+        <!-- M7LO6 Demonstrate the use of check boxes in a form 
+             I implemented a check box to see if they are located near Bremerton, Wa.
+        -->
         <input name="locationCheck" id="location" value="yes" type="checkbox" />
         <label for="location">You are located near Bremerton, WA.</label>
       </fieldset>
 
+      <!-- M7LO10 Demonstrate the use of a submit button in a form 
+           I added the submit button for them to submit the form, so I can eventually process the input.
+           For now, it sends the data to the example PHP script, which outputs all of the given data as text.
+      -->
       <div id="buttons">
         <input type="submit" value="Submit Info" />
         <input type="reset" value="cancel" />
