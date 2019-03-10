@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
   Project: Personal Website Project
-  Version: V3
+  Version: V4
   Author: Gregory Hablutzel
-  Date:   02-19-19
+  Date:   03-09-19
   Filename: styles.css
 */
 /* M3LO1 Demonstrate the use of a CSS reset style sheet (CSS, note where you have CSS reset rules) 
@@ -433,8 +433,7 @@ For Mobile Layout (<=480px wide), I have the navigation displayed in one column,
     }
 }
 
-
-
+/* gif / Animation Styles */
 
 #akira {
     display: block;
@@ -447,15 +446,62 @@ For Mobile Layout (<=480px wide), I have the navigation displayed in one column,
     animation: rotate 100s linear infinite;
 }
 
-
 @keyframes rotate {
     0% {transform: rotate(0deg);}
     100% {transform: rotate(360deg);}
 }
 
+/* iFrame Styles */
 
 iframe {
     width: 80%;
     margin-left: 10%;
     margin-right: 10%;
+}
+
+/* Legend Styles */
+
+legend {
+    /*background-color:  #3E3748;*/
+    background-color: #67536C;
+    color: white;
+    padding: 5px;
+}
+
+/* Label Styles */
+
+label {
+    /*background-color:  #3E3748;*/
+    background-color:  #53536C;
+    color: white;
+    padding: 5px; 
+}
+
+.binary > label[for="sYes"] {
+    background-color: #93AC93;
+}
+
+.binary > label[for="sNo"] {
+    background-color: #D35F5F;
+}
+
+/* General Form Styles */
+
+.reqField::after {
+  color: #FF0000;
+  content: "\2B26"
+  
+}
+
+fieldset div, label[for="projectDescription"] {
+    margin-top: 10px;
+    margin-bottom: 7px;
+}
+
+/* Text Area Styles */
+
+textarea {
+    margin-top: 10px;
+    height: 100px;
+    width: 90%;
 }

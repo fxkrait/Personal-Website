@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <!--
       Project: Personal Website Project
-      Version: V3
+      Version: V4
       Author: Gregory Hablutzel
-      Date:   02-19-19
+      Date:   03-09-19
       Filename: people.html
   -->
   <title>People</title>
@@ -40,25 +40,25 @@
       <h1>Want to Collaborate?</h1>
       <p>Enter details below about what you want to work on. I'll get in touch as soon as possible, and let you know if I'm interested.</p>
       <p>Check "academics.html" for my current academic schedule and academic focus</p>
-      <iframe src="academics.html"></iframe> 
+      <iframe src="academics.html#academics"></iframe> 
       <p>Also check "projects.html" for current projects.</p>
-      <iframe src="projects.html"></iframe> 
+      <iframe src="projects.html#projects"></iframe> 
       <p>Lastly, check the list of people down below for resources, inspiration, or other potential people to work with.</p>
       <p>Best of luck.</p>
       <br>
-      <p>Required values are marked by an asterisk (*)</p>
+      <p class="reqField">Required values are marked by a red diamond: </p>
       <br>
     </div>
     <form id="collaborateForm" action="http://cis2.oc.ctc.edu/oc_apps/Garripoli/checkform.php" method="post">
       <fieldset id="collaboratorName">
         <legend>Collaborator Information</legend>
         <div class="inputRow">
-          <label for="name">Name*</label>
+          <label class="reqField" for="name">Name</label>
           <input name="collabName" id="name" type="text" placeholder="first and last name" required/>
         </div>
   
         <div class="inputRow">
-          <label for="mail">E-mail*</label>
+          <label class="reqField" for="mail">E-mail</label>
           <input name="collabEmail" id="mail" type="email" required/>
         </div>
 
@@ -69,7 +69,7 @@
         
         <div class="inputRow">
           <label>Are you a student?</label>
-          <fieldset class="radioButtons">
+          <fieldset class="radioButtons binary">
             <label for="sYes">Yes</label>
             <input name="student" id="sYes" value="yes" type="radio" />
             <label for="sNo">No</label>
@@ -82,28 +82,27 @@
         <legend>Project Information</legend> 
         
         <div class="inputRow">
-          <label for="">Category</label>
+          <label for="catList">Category</label>
           <select name="categoryType" id="catList">
-            <option value="category" selected>Math</option>
-            <option value="category">Programming</option>
-            <option value="category">Other</option>
+            <option value="Math" selected>Math</option>
+            <option value="Programming">Programming</option>
+            <option value="Other">Other</option>
           </select>
         </div>
 
-        <p>. </p>
-
-        <label for="projectDescription">Project Description*:</label>
+        <br>
+        
+        <label class="reqField" for="projectDescription">Project Description</label>
         <textarea name="projectDesc" id="descriptionText" required></textarea>
 
-        <p>. </p>
         <div class="inputRow">
           <label for="difficultyRange">General Scope of Difficulty:<br />
-            (0=Easy; 10=Hard)</label>
+             (<font color="#93AC93">0=Easy</font>: <font color="#D35F5">10=Hard</font>)</label>
           
-          0
+          <font color="#93AC93"> 0</font>
           <input name="difficulty" id="difficultyRange" type="range"
                  value="5" step="1" min="0" max="10" />
-          10
+          <font color="#D35F5F"> 10</font>
         </div>
       </fieldset>
 
